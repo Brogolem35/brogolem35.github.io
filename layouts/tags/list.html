@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+{{ if eq .RelPermalink "/tags/"}}
+        {{ range $.Site.Taxonomies.tags.Alphabetical }}
+                <div class="listItem">
+                        <h1><a class="invisLink" href="/tags/{{ .Name }}">#{{ .Name }} ({{ .Count }})</a></h1>
+                </div>
+                <div class="listItemBorder"></div>
+        {{ end }}
+{{ else }}
+        {{ partial "postlist" . }}
+{{ end }}
+{{ end }}

@@ -1,0 +1,214 @@
+@font-face {
+        font-family: "Noto Serif";
+        src: url("/NotoSerif-Regular.ttf");
+}
+
+:root {
+        --bg: #e1dacd;
+        --bgSoft: #e4e2e0;
+        --text: #0D090A;
+        --textSoft: rgb(88, 88, 88);
+}
+
+* {
+        margin: 0;
+        box-sizing: border-box;
+}
+
+body {
+        background: var(--bg);
+        color: var(--text);
+        font-family: "Noto Serif", "Arial", "Verdana";
+        
+}
+
+.invisLink {
+        border: none;
+        outline: none;
+        text-decoration: none;
+        color: inherit;
+        -webkit-tap-highlight-color: white;
+}
+
+.container {
+        padding-left: 50px;
+        padding-right: 50px;
+        margin: auto;
+        min-height: 100vh;
+}
+
+.content {
+        max-width: 1366px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: auto;
+        overflow-wrap: break-word;
+        /* background-color: rebeccapurple; */
+}
+
+.notFound {
+        display: block;
+        align-items: center;
+        text-align: center;
+}
+
+.navbar {
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+}
+
+.logo {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 24px;
+}
+
+.links {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 18px;
+}
+
+.postTitle {
+        font-size: 2em;
+}
+
+.postDate {
+        font-size: 1em;
+}
+
+.listItemTag {
+        padding-right: 0.5em;
+}
+
+.listItemBorder {
+        margin-top: 10px;
+        border-bottom: 1px solid black;
+}
+
+.listItemSummary {
+        padding-top: 1em;
+}
+
+.singleBottom {
+        padding-top: 2em;
+        max-width: 1280px;
+}
+
+.contentText {
+        display: block;
+        max-width: 100%;
+        text-indent: 1em;
+        gap: 1em;
+}
+
+.contentText * {
+        padding-bottom: 1em;
+}
+
+.contentText figure {
+        display: block;
+        padding-top: 1em;
+        text-align: center;
+}
+
+.contentText figure img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0.2em;
+        max-width: 90%;
+        max-height: 100vh;
+}
+
+span img {
+        height: 1em;
+        width: auto;
+}
+
+.footerMessage {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+        font-size: 18px;
+        gap: 10px;
+}
+
+.social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        font-size: 32px;
+        gap: 10px;
+}
+
+.social img {
+        height: 1em;
+        width: auto;
+}
+
+@media (max-width: 1536px) {
+}
+
+@media (max-width: 1366px) {
+        .container {
+                max-width: 1280px;
+        }
+}
+
+@media (max-width: 1280px) {
+        .container {
+                max-width: 1024px;
+        }
+}
+
+@media (max-width: 1024px) {
+        .container {
+                max-width: 768px;
+                padding-left: 10px;
+                padding-right: 10px;
+        }
+
+        .singleHeadImg {
+                display: none;
+        }
+
+        .singleBottom {
+                flex-direction: column-reverse;
+        }
+
+        .rightBarImg {
+                display: none;
+        }
+
+        .rightBarImgHr {
+                display: block;
+                width: 100%;
+        }
+}
+
+@media (max-width: 768px) {
+        .container {
+                max-width: 640px;
+        }
+
+        .links {
+                font-size: 14px;
+        }
+
+        .listItemImage {
+                display: none;
+        }
+}
+
+@media (max-width: 640px) {
+        .container {
+                max-width: 475px;
+        }
+}

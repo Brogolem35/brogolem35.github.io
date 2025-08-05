@@ -1,0 +1,17 @@
+{{ define "main" }}
+<div class="single">
+        <div class="singleHead">
+                <h1 class="singleTitle postTitle">{{ .Title }}</h1>
+                <p class="postDate">{{ dateFormat .Site.Params.dateFormat .Date}}</p>
+
+                {{ range (.GetTerms "tags") }}
+                        <a href={{.RelPermalink}} class="listItemTag">#{{ .Name }}</a>
+                {{ end }}
+
+                {{ partial "readTime" . }}
+        </div>
+        <div class="singleBottom">
+                <div class="contentText">{{ .Content }}</div>
+        </div>
+</div>        
+{{ end }}

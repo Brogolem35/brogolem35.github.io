@@ -1,0 +1,22 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Brogolem35 Yapping Grounds'
+
+summaryLength = 1
+
+[params]
+dateFormat = "January 2, 2006"
+description = "A blog where Brogolem35 shares his objectively wrong opinions on programming, art, and other stuff."
+
+[params.author]
+email = "brogolem35@protonmail.com"
+name = "Can Çelenay"
+
+[security]
+enableInlineShortcodes = true
+
+[outputs]
+  home = ["html", "rss"]
+  section = ["html", "rss"]
+  taxonomy = ["html"]
+  term = ["html"]

@@ -1,0 +1,24 @@
+<div class="list">
+        {{ $listedPages := where .Paginator.Pages ".Params.unlisted" "!=" true }}
+        {{ range $listedPages }}
+                <div class="listItem">
+                        <h1 class="postTitle"><a class="invisLink" href={{.RelPermalink}}>{{ .Title }}</a></h1>
+                        <p class="postDate">{{ dateFormat .Site.Params.dateFormat .Date}}</p>
+
+
+                        <div class="listItemTags">
+                                {{ range (.GetTerms "tags") }}
+                                        <a href={{.RelPermalink}} class="listItemTag">#{{ .Name }}</a>
+                                {{ end }}
+                        </div>
+
+                        {{ partial "readTime" . }}
+
+                        <div class="listItemSummary contentText">
+                                {{ .Summary | truncate 620 }}
+                        </div>
+                        <a class="listReadMore" href="{{ .RelPermalink }}">Read more...</a>
+                </div>
+                <div class="listItemBorder"></div>
+        {{ end }}
+</div>
