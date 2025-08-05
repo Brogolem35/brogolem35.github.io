@@ -82,7 +82,7 @@ Like mentioned before, I have experience with Unity.
 
 [Hugo](https://github.com/gohugoio/hugo). It even has support for [RSS](/index.xml), which was a big deal for me.
 
-The theme was made by me, with some components I gathered around. The site source can be found [here]().
+The theme was made by me, with some components I gathered around. The site source can be found [here](https://github.com/Brogolem35/brogolem35.github.io).
 
 The site is currently hosted on GitHub Pages.
 
