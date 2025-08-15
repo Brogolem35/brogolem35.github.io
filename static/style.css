@@ -124,6 +124,11 @@ body {
         max-height: 100vh;
 }
 
+.highlight * {
+        font-family: monospace;
+        padding-bottom: 0.0em;
+}
+
 span img {
         height: 1em;
         width: auto;
