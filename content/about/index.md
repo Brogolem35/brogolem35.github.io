@@ -1,6 +1,6 @@
 +++
 draft = false
-date = "2025-08-05T14:22:00+03:00"
+date = "2025-08-05"
 title = "About"
 tags = []
 unlisted = true
