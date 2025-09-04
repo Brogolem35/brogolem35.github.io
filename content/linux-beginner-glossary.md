@@ -16,8 +16,8 @@ experience with Linux, I would highly recommend learning at least the first 15 t
 
 ### Linux
 
-An open source [kernel](#kernel) and the family of operating systems built on top of
-the said kernel.
+An open source [kernel](#kernel) and the [family of operating systems](#distributiondistro)
+built on top of the said kernel.
 
 The operating system can sometimes be referred to as GNU/Linux, and most of the time they
 mean the same thing. I won't be getting into the details of it in this post.
@@ -31,7 +31,7 @@ and all other processes run on top of it.
 ### Distribution/Distro
 
 There is no **one absolute Linux operating system**. There are many operating systems
-built on top of the [Linux kernel](#kernel) and they are commonly referred to as distributions
+built on top of the [Linux kernel](#linux) and they are commonly referred to as distributions
 (distro for short). While different distros are referred to as separate operating systems,
 programs written for one work on others as well (save for some edge cases), as long
 as the distro provides the [dependencies](#dependency).
