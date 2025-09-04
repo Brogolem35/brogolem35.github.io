@@ -124,6 +124,11 @@ body {
         max-height: 100vh;
 }
 
+code {
+        font-family: monospace;
+        font-size: 120%;
+}
+
 .highlight * {
         font-family: monospace;
         padding-bottom: 0.0em;
