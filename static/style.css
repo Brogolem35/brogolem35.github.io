@@ -133,6 +133,19 @@ code {
         padding-bottom: 0.0em;
 }
 
+dt {
+        display: block;
+        font-size: 1.17em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        unicode-bidi: isolate;
+}
+
+.content dd {
+        padding-bottom: 0;
+}
+
 span img {
         height: 1em;
         width: auto;
