@@ -41,9 +41,10 @@ The popular distros include Linux Mint, Debian, and Arch.
 ### Command-Line Shell
 
 An interface that gives the user broad access to the system through either the execution
-of commands entered into a prompt or shell scripts.
+of commands entered into a prompt or shell scripts. Mostly interacted through a [terminal emulator](#terminal-emulator).
 
-Usually just referred to as shell.
+Usually just referred to as shell. In casual conversation, the terms shell and terminal
+are commonly used interchangeably.
 
 ### root User
 
@@ -190,6 +191,12 @@ Commonly referred to as shared library, dynamic library, and DLL.
 
 The most commonly used C Standard [Library](#shared-object) implementation on Linux systems.
 Almost all Linux software [depends](#dependency) on it.
+
+### Terminal Emulator
+
+Graphical application that is used to run command-line applications, such as [shells](#command-line-shell).
+
+Usually just referred to as terminal.
 
 ### Root Directory
 
