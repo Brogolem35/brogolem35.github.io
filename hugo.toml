@@ -15,6 +15,9 @@ name = "Can Çelenay"
 [security]
 enableInlineShortcodes = true
 
+[markup.goldmark.renderer]
+unsafe= true
+
 [outputs]
   home = ["html", "rss"]
   section = ["html", "rss"]
