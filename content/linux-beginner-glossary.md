@@ -139,16 +139,27 @@ through Steam or [ProtonUp-Qt](https://github.com/DavidoTek/ProtonUp-Qt).
 
 ### X11
 
-A display server protocol for Linux and other UNIX-like systems. It can also be referred
-to as X Window System, or just X. The commonly used X11 server implementation is X.org.
+A [display server protocol](#display-server) for Linux and other UNIX-like systems. It
+can also be referred to as X Window System, or just X. The commonly used X11 server implementation
+is X.org.
 
 X11 is a legacy protocol with limited support. It is generally advised to use [Wayland](#wayland),
 X11's successor, unless you have specific needs or have Wayland specific problems.
 
 ### Wayland
 
-A display server protocol for Linux and other UNIX-like systems. Display servers that
-use the Wayland protocol are called compositors.
+A [display server protocol](#display-server) for Linux and other UNIX-like systems.
+
+### Display Server
+
+A process that is the core of the graphical user environment. It handles device inputs,
+window placement and order, window focus, and other miscellaneous functionality.
+
+Processes that interact with the user through a graphical user interface have to communicate
+with the display server in order to accomplish even the simplest tasks, such as creating
+a window. The set of rules of the communication is referred to as display server protocol. 
+
+They can be referred to as compositors in [Wayland](#wayland) context.
 
 ### Daemon
 
