@@ -14,22 +14,23 @@ information. If you want to make improvements to the post, feel free to [create 
 The terms are ordered according to their importance and commonness. If you have zero
 experience with Linux, I would highly recommend learning at least the first 15 terms. 
 
-### Linux
+{{< dl >}}
 
-An open source [kernel](#kernel) and the [family of operating systems](#distributiondistro)
+{{< dt "Linux" >}}
+An open source [kernel](#kernel) and the [family of operating systems](#distribution/distro)
 built on top of the said kernel.
 
 The operating system can sometimes be referred to as GNU/Linux, and most of the time they
 mean the same thing. I won't be getting into the details of it in this post.
+{{< /dt >}}
 
-### Kernel
-
+{{< dt "Kernel">}}
 The core of an operating system, which handles software-hardware interactions, process
 scheduling, and many other important tasks. Has elevated privileges on the hardware level
 and all other processes run on top of it.
+{{< /dt >}}
 
-### Distribution/Distro
-
+{{< dt "Distribution/Distro">}}
 There is no **one absolute Linux operating system**. There are many operating systems
 built on top of the [Linux kernel](#linux) and they are commonly referred to as distributions
 (distro for short). While different distros are referred to as separate operating systems,
@@ -37,24 +38,25 @@ programs written for one work on others as well (save for some edge cases), as l
 as the distro provides the [dependencies](#dependency).
 
 The popular distros include Linux Mint, Debian, and Arch.
+{{< /dt >}}
 
-### Command-Line Shell
-
+{{< dt "Command-Line Shell">}}
 An interface that gives the user broad access to the system through either the execution
 of commands entered into a prompt or shell scripts. Mostly interacted through a [terminal emulator](#terminal-emulator).
 
 Usually just referred to as shell. In casual conversation, the terms shell and terminal
 are commonly used interchangeably.
+{{< /dt >}}
 
-### root User
+{{< dt "root User">}}
 
 The superuser/admin user of a Linux system. Has absolute permission.
 
 Logging in as the root should be avoided. If an operation requires root privileges, it
 would be advised to use [sudo](#sudo).
+{{< /dt >}}
 
-### sudo
-
+{{< dt "sudo">}}
 A [shell](#command-line-shell) utility that allows a regular user to execute a command as the [root user](#root-user).
 It is useful, as some tools require root permissions to run. But the user must be careful
 when using as it temporarily grants absolute power and is a common target for malware
@@ -64,22 +66,22 @@ Contrary to popular belief, using sudo does not solve all your problems. If you 
 problems while running a command, just slapping sudo in front of it without understanding
 the cause may not only not solve it but can also cause harm to the system. It is a
 common rookie mistake.
+{{< /dt >}}
 
-### man pages
-
+{{< dt "man pages">}}
 A form of documentation for Linux and other UNIX-like systems. It is the common way of
 getting information for commands, software, and operating system features. It is a **man**ual.
 
 To learn more, run `man man` on your [shell](#command-line-shell).
+{{< /dt >}}
 
-### Bash
-
+{{< dt "Bash">}}
 A commonly used [shell](#command-line-shell) implementation and a scripting language. It
-is pre-installed on almost every Linux [distro](#distributiondistro) and is the default
+is pre-installed on almost every Linux [distro](#distribution/distro) and is the default
 on most of them.
+{{< /dt >}}
 
-### Package Manager
-
+{{< dt "Package Manager">}}
 A software to help users to manage the software installed on the system. It handles the
 installation, updating, and removal of software along with their [dependencies](#dependency).
 
@@ -88,9 +90,9 @@ an installer from a website but to use the package manager or managers of the di
 
 Commonly used package managers include `apt` (used by Linux Mint and Debian), `pacman` (Arch),
 and [Flatpak](#flatpak) (universal).
+{{< /dt >}}
 
-### Flatpak
-
+{{< dt "Flatpak">}}
 A universal package manager, meaning that the software installed and managed by Flatpak
 can work on any Linux distro, and the installation of the software using it will not cause
 [conflicts](#dependency-conflict) with other package managers.
@@ -103,56 +105,56 @@ can be used to manage permissions easily.
 Currently, Flatpak is generally used with applications with graphical user interfaces.
 While it is is possible to install and use [shell](#command-line-shell) applications with
 Flatpak, it is mostly avoided, as they are not ergonomic to use with it.
+{{< /dt >}}
 
-### Dependency
-
+{{< dt "Dependency">}}
 A program or [library](#shared-object) that is required by another software to function.
+{{< /dt >}}
 
-### Dependency Conflict
-
+{{< dt "Dependency Conflict">}}
 Occurrence of multiple software depending on the same software of different versions.
 It is the job of the [package manager](#package-manager) to avoid and handle such conflicts.
+{{< /dt >}}
 
-### Desktop Environment
-
+{{< dt "Desktop Environment">}}
 A software bundle that implements a complete desktop experience. They generally
 include taskbars, desktop widgets, and a [window manager](#window-manager).
 
 Commonly used desktop environments are KDE Plasma, GNOME, and Cinnamon.
+{{< /dt >}}
 
-### Window Manager
-
+{{< dt "Window Manager">}}
 A software that manages the placement of the windows. Can be used standalone or be a part
 of a [desktop environment](#desktop-environment).
+{{< /dt >}}
 
-### Wine
-
+{{< dt "Wine">}}
 A compatibility layer that allows execution of Windows applications on Linux and other
 UNIX-like systems. Running under Wine may cause the application to have issues such as
 specific features not working, decrease in responsiveness, and worse performance.
 
 Wine, by itself, does not provide isolation and does not prevent malware from being run.
+{{< /dt >}}
 
-### Proton
-
+{{< dt "Proton">}}
 A derivative of [Wine](#wine) that is more focused on video games. Can be obtained
 through Steam or [ProtonUp-Qt](https://github.com/DavidoTek/ProtonUp-Qt).
+{{< /dt >}}
 
-### X11
-
+{{< dt "X11">}}
 A [display server protocol](#display-server) for Linux and other UNIX-like systems. It
 can also be referred to as X Window System, or just X. The commonly used X11 server implementation
 is X.org.
 
 X11 is a legacy protocol with limited support. It is generally advised to use [Wayland](#wayland),
 X11's successor, unless you have specific needs or have Wayland specific problems.
+{{< /dt >}}
 
-### Wayland
-
+{{< dt "Wayland">}}
 A [display server protocol](#display-server) for Linux and other UNIX-like systems.
+{{< /dt >}}
 
-### Display Server
-
+{{< dt "Display Server">}}
 A process that is the core of the graphical user environment. It handles device inputs,
 window placement and order, window focus, and other miscellaneous functionality.
 
@@ -161,54 +163,57 @@ with the display server in order to accomplish even the simplest tasks, such as 
 a window. The set of rules of the communication is referred to as display server protocol. 
 
 They can be referred to as compositors in [Wayland](#wayland) context.
+{{< /dt >}}
 
-### Daemon
-
+{{< dt "Daemon">}}
 A background process that is generally not directly interacted with. They sometimes can be
 referred to as services. 
+{{< /dt >}}
 
-### init Process
-
+{{< dt "init Process">}}
 The first process that runs at the startup. It is used to initialize important components
 of the system, such as device drivers and [daemons](#daemon).
+{{< /dt >}}
 
-### systemd
-
+{{< dt "systemd">}}
 The most commonly used [init process](#init-process) implementation. It is also bundled
 with other tools that were designed to be used with it.
 
 The main way of interacting with systemd is through the `systemctl` command.
+{{< /dt >}}
 
-### Shared Object
-
+{{< dt "Shared Object">}}
 A library that contains executable code that is shared by multiple processes or libraries
 at runtime, akin to Windows's DLL files. Shared object files commonly have the `.so` file
 extension.
 
 Commonly referred to as shared library, dynamic library, and DLL.
+{{< /dt >}}
 
-### glibc
-
+{{< dt "glibc">}}
 The most commonly used C Standard [Library](#shared-object) implementation on Linux systems.
 Almost all Linux software [depends](#dependency) on it.
+{{< /dt >}}
 
-### Terminal Emulator
-
+{{< dt "Terminal Emulator">}}
 Graphical application that is used to run command-line applications, such as [shells](#command-line-shell).
 
 Usually just referred to as terminal.
+{{< /dt >}}
 
-### Root Directory
-
+{{< dt "Root Directory" >}}
 The top-most directory in the file hierarchy. Has the file path `/`.
 
 Can be referred to as the root folder.
+{{< /dt >}}
 
-### Kernel Panic
-
+{{< dt "Kernel Panic" >}}
 An occurrence when the [kernel](#kernel) enters an unrecoverable failure state. It is
 a very rare occurrence and mostly stems from faulty hardware or driver.
 
 In modern distros, kernel panics display a QR code in a blue screen. The QR code is for
 a URL that contains information on the occurred panic. An example of the said blue screen
 can be found [here](https://bbs.archlinux.org/viewtopic.php?pid=2256536#p2256536).
+{{< /dt >}}
+
+{{< /dl >}}
