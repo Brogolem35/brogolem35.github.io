@@ -101,7 +101,6 @@ body {
 .contentText {
         display: block;
         max-width: 100%;
-        text-indent: 1em;
         gap: 1em;
 }
 
