@@ -27,11 +27,12 @@ Been using Godot for 2 years, around the time Unity did the runtime fee thingy.
 I mostly developed 2D pixel-art games. [godot-rust](https://github.com/godot-rust/gdext), my beloved.
 
 Games I worked on:
+- [Botsies](https://github.com/Brogolem35/botsies): Reimplementation of [Footsies](https://github.com/hifight/Footsies), made for reinforcement learning training. Uses godot-rust.
 - [Chunk And Hunger](https://brogolem35.itch.io/chunk-and-hunger): 2D puzzle survival game made for the Ludum Dare 54.
 - [P.H.A.N.T.O.M.](https://brogolem35.itch.io/phantom): Top-down puzzle game made for the Mağara Jam 2023.
 - [Stealth Strike](https://brogolem35.itch.io/stealth-strike): Stealth puzzle game made for the Jamination 7 game jam.
 - [AlonzoTech](https://sourlemon4.itch.io/alonzotech): Roguelike factory/deck builder made for the EGGJAM.
-- [Botsies](https://github.com/Brogolem35/botsies): Reimplementation of [Footsies](https://github.com/hifight/Footsies), made for reinforcement learning training.
+- [Django: UnStabled](https://abuzitin2000.itch.io/django-unstabled): Survivors-like game made for Jamination 8 game jam. Uses godot-rust.
 
 ### Rust:
 
@@ -43,6 +44,7 @@ I have published 2 crates on [crates.io](https://crates.io/):
 
 Like I mentioned in the [Godot section](#godot), I also use Rust to code GdExtensions:
 - [Botsies](https://github.com/Brogolem35/botsies)
+- [Django: UnStabled](https://abuzitin2000.itch.io/django-unstabled)
 
 I have some experience programming backend servers with [axum](https://github.com/tokio-rs/axum). Mostly for my university projects.
 - [markov-chain-backend](https://github.com/Brogolem35/markov-chain-backend): Based on a very old version of the `markov_str`.
@@ -60,7 +62,7 @@ Casual C enjoyer.
 
 Have decent experience with Arduino and ESP32.
 
-[Aspiring Godot contributor.](https://github.com/godotengine/godot/pulls/Brogolem35)
+[Godot contributor.](https://github.com/godotengine/godot/pulls/Brogolem35)
 
 ### Unity
 
