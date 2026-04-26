@@ -127,5 +127,5 @@ have missed will reveal themselves during the tests.
 The resulting repo should look like [this](https://codeberg.org/Brogolem35/godot-steam-rollback/src/branch/true_p2p).
 
 # Shameless Self-promotion
-Checkout my game, [Flame Up]((https://store.steampowered.com/app/4536730/Flame_Up/)). It was where I developed
+Checkout my game, [Flame Up](https://store.steampowered.com/app/4536730/Flame_Up/). It was where I developed
 and tested the methods I showed above. Feel free to try out the demo and wishlist it.
