@@ -22,11 +22,12 @@ I love low-level development. I love C. I love Rust. I hate (but tolerate) C++.
 
 ### Godot:
 
-Been using Godot for 2 years, around the time Unity did the runtime fee thingy.
+Been using Godot for 3 years, around the time Unity did the runtime fee thingy.
 
 I mostly developed 2D pixel-art games. [godot-rust](https://github.com/godot-rust/gdext), my beloved.
 
 Games I worked on:
+- [Flame Up](https://store.steampowered.com/app/4536730/Flame_Up/): A simplified fighting game with rollback netcode published on Steam. Uses godot-rust.
 - [Botsies](https://github.com/Brogolem35/botsies): Reimplementation of [Footsies](https://github.com/hifight/Footsies), made for reinforcement learning training. Uses godot-rust.
 - [Chunk And Hunger](https://brogolem35.itch.io/chunk-and-hunger): 2D puzzle survival game made for the Ludum Dare 54.
 - [P.H.A.N.T.O.M.](https://brogolem35.itch.io/phantom): Top-down puzzle game made for the Mağara Jam 2023.
@@ -36,13 +37,16 @@ Games I worked on:
 
 ### Rust:
 
-Also been using Rust for 2 years. Because my mother tongue was C, Rust did not feel foreign at all.
+Also been using Rust for 3 years. Because my mother tongue was C, Rust did not feel foreign at all.
 
 I have published 2 crates on [crates.io](https://crates.io/):
 - [markov_str](https://github.com/Brogolem35/markov_str): Markov Chain text generator. Can be serialized and deserialized through [serde](https://github.com/serde-rs/serde).
 - [wcount](https://github.com/Brogolem35/wcount): CLI word counting tool.
 
+I wrote a YouTube Music frontend named [Eartube](https://github.com/Brogolem35/eartube).
+
 Like I mentioned in the [Godot section](#godot), I also use Rust to code GdExtensions:
+- [Flame Up](https://store.steampowered.com/app/4536730/Flame_Up/)
 - [Botsies](https://github.com/Brogolem35/botsies)
 - [Django: UnStabled](https://abuzitin2000.itch.io/django-unstabled)
 
