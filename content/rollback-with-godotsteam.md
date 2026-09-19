@@ -6,8 +6,10 @@ tags = ["godot", "gamedev", "networking", "tutorial"]
 unlisted = false
 +++
 
+**Edit September 19, 2026**: Updated to 4.7, added checksums to packets in True P2P (see more in [True P2P/SteamManager.gd](#steammanagergd)).
+
 This post is for those who want to use Snopek's Godot Rollback addon with the Steam's peer-to-peer multiplayer APIs.
-I will cover both Relayed and True P2P. This tutorial was made on Godot 4.6.2, if it breaks on a later version
+I will cover both Relayed and True P2P. This tutorial was made on Godot 4.7.2, if it breaks on a later version
 or you encounter any problems in general, please reach out to me at brogolem35@protonmail.com.
 
 I will be using a Godot 4 port of Snopek's example project from his [tutorials](https://www.youtube.com/playlist?list=PLCBLMvLIundBXwTa6gwlOUNc29_9btoir).
@@ -69,6 +71,13 @@ and the addition of `read_all_p2p_packets` and `send_p2p_packet`. These methods 
 multiplayer API and packets sent with these methods are not relayed if the hole punching succeeds,
 otherwise they fall back to relaying. I highly encourage you to read the code yourself, it is quite
 documented. You will see some errors in the code now, they should disappear after the next section.
+
+You may realize that `send_p2p_packet` and `read_p2p_packet` methods call another method called `packet_hash`.
+`packet_hash` creates an SHA256 hash of the given packet and we prepend it to the packet. This is done
+because the Steam P2P APIs do not handle packet corruption, even when `P2P_SEND_RELIABLE` is passed.
+This behaviour is not documented in the Steam API docs either.
+My fix was to add our own checksum. If the checksum is invalid, then the packet gets dropped.
+It is not perfect but much better than letting corrupt packets in and do their thing.
 
 ## CustomMessageSerializer.gd
 Change the whole contests of it with the contents given [here](https://codeberg.org/Brogolem35/godot-steam-rollback/src/branch/true_p2p/CustomMessageSerializer.gd).
