@@ -6,8 +6,6 @@ tags = ["godot", "gamedev", "networking", "tutorial"]
 unlisted = false
 +++
 
-**Edit September 19, 2026**: Updated to 4.7, added checksums to packets in True P2P (see more in [True P2P/SteamManager.gd](#steammanagergd)).
-
 This post is for those who want to use Snopek's Godot Rollback addon with the Steam's peer-to-peer multiplayer APIs.
 I will cover both Relayed and True P2P. This tutorial is tested on Godot 4.7.2, if it breaks on a later version
 or you encounter any problems in general, please reach out to me at brogolem35@protonmail.com.
@@ -15,6 +13,8 @@ or you encounter any problems in general, please reach out to me at brogolem35@p
 I will be using a Godot 4 port of Snopek's example project from his [tutorials](https://www.youtube.com/playlist?list=PLCBLMvLIundBXwTa6gwlOUNc29_9btoir).
 I would highly recommend for you to watch his videos first before proceeding. The port in question can be found in this
 [repo](https://codeberg.org/Brogolem35/godot4-rollback-tutorial).
+
+**Edit September 19, 2026**: Updated to 4.7, added checksums to packets in True P2P (see more in [True P2P/SteamManager.gd](#steammanagergd)).
 
 # Relayed vs True P2P
 
