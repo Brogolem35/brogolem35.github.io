@@ -6,15 +6,9 @@ tags = []
 unlisted = true
 +++
 
-The name's Can Çelenay. Turkish. Godot and Rust enjoyer, and the man who is gonna fill this blog with total peak.
-
-Now, with the obligatory TF2 reference out of the way...
-
-## Seriously, who the hell am I?
-
 I am Can Çelenay, also known as Brogolem35. The sole owner of this blog.
 
-I am an aspiring game developer who enjoys developing stuff using Rust, Godot, or both at the same time.
+I am an aspiring game developer from Turkey that enjoys developing stuff using Rust, Godot, or both at the same time.
 
 I love low-level development. I love C. I love Rust. I hate (but tolerate) C++.
 
